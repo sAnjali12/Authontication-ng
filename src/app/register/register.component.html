@@ -1,0 +1,75 @@
+<section id="register">
+    <div class="bwm-form">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="col-md-6 ml-auto">
+              <h3 class="catchphrase"> Please Register.......</h3>
+          </div>
+          <form (submit)="register()">
+            <div class="form-group">
+              <label for="Username"><b>Username</b></label>
+              <input [(ngModel)]="credentials.Username"
+                    #Username="ngModel" 
+                    name="Username" 
+                    type="text"  
+                    class="from control"
+                    placeholder="Enter Username" 
+                    id="Username"
+                    required>
+          </div>
+  
+          <div class="form-group">
+              <label for="Email"><b>Email</b></label>                                                                                                        
+              <input [(ngModel)]="credentials.Email" 
+              type="text" 
+              name="Email" 
+              class="from control"
+              placeholder="Enter email"
+              id="Email"
+              required>
+          </div> 
+  
+          <div class="form-group">
+            <label for="password"><b>Password</b></label>
+            <input [(ngModel)]="credentials.Password" 
+            type="Password" 
+            name="Password" 
+            class="from control"
+            placeholder="Enter password" 
+            id="Password"
+            required>
+          </div>
+  
+            <button  class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+          </form>
+      </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="cal-md-6 mt-5 mx-auto">
+            <form (submit)="register()">
+                <h1 class="h3 md-3 font-weight-normal">Register</h1>
+                <div class="form-group">
+                    <label for="Username">Username</label>
+                    <input type="Username" class="form-control" name="Username" placeholder="Enter Username"  (ngmodel)="credentials.Username" required>
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input type="Email" class="form-control" name="Email" placeholder="Enter Email"  (ngmodel)="credentials.Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="Password">Password</label>
+                    <input type="Password" class="form-control" name="Password" placeholder="Enter Password"  (ngmodel)="credentials.Password" required>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</div> -->
